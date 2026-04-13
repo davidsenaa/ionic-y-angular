@@ -1,0 +1,7 @@
+{
+  "name": "ejempolo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
