@@ -1,13 +1,69 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="primero">
-    <ion-title>customer</ion-title>
+  <ion-toolbar>
+    <ion-title>Customer</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">customer</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-header collapse="condense"></ion-header>
+  <ion-segment [(ngModel)]="segmento" [value]="segmento">
+    <ion-segment-button value="primero" class="boton1">
+      <ion-label>First</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="segundo" class="boton2">
+      <ion-label>Second</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="tercero" class="boton3">
+      <ion-label>Third</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  
+  @if (segmento === 'primero') {
+  <div class="caja1">
+    <h2>Prueba 1</h2>
+    <div class="cajita1">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1280px-User_icon_2.svg.png" alt="ejemplo">
+    </div>
+    <p class="p1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, in. Nemo
+      id officiis, recusandae repellendus doloribus officia assumenda laudantium
+      repudiandae aliquam tenetur totam debitis temporibus. Ab laborum quasi
+      voluptatem quia.
+    </p>
+    <p class="p1-1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Voluptate quod, quos consectetur nam totam quia nihil eveniet sed 
+      neque esse beatae amet aliquam ea doloremque odio dolor deleniti fugit quam.
+    </p>
+    <div class="cajita2">
+      <img src="https://cdn-icons-png.flaticon.com/512/17/17115.png" alt="imagen2">
+    </div>
+    <p class="p1-2">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Atque, explicabo nam repellendus, voluptatem nobis ea doloribus necessitatibus, 
+      quam tempore corporis fuga? Unde excepturi autem provident fuga nesciunt minima 
+      corrupti error!
+    </p>
+  </div>
+  }@else if (segmento === 'segundo') {
+  <div class="caja2">
+    <h2>Prueba 2</h2>
+    <p class="p2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, in. Nemo
+      id officiis, recusandae repellendus doloribus officia assumenda laudantium
+      repudiandae aliquam tenetur totam debitis temporibus. Ab laborum quasi
+      voluptatem quia.
+    </p>
+  </div>
+  }@else if (segmento === 'tercero') {
+  <div class="caja3">
+    <h2>Prueba 3</h2>
+    <p class="p3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, in. Nemo
+      id officiis, recusandae repellendus doloribus officia assumenda laudantium
+      repudiandae aliquam tenetur totam debitis temporibus. Ab laborum quasi
+      voluptatem quia.
+    </p>
+  </div>
+  }
 </ion-content>

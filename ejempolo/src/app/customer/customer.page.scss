@@ -1,3 +1,85 @@
 ion-toolbar{
-    background-color: var(ion-color-primero);
+    --background: linear-gradient(to bottom left, var(--ion-color-primero), var(--ion-color-tercero));
+    --color: white;
+    text-align: center;
+}
+
+ion-segment{
+    --background: linear-gradient(to bottom left, var(--ion-color-tercero), var(--ion-color-primero));
+}
+
+.boton1{
+    --color: white;
+}
+
+.boton2{
+    --color: white;
+}
+
+.boton3{
+    --color: white;
+}
+
+h2{
+    text-align: center;
+}
+
+.p1{
+    text-align: center;
+    transform: translateY(20px);
+}
+
+.p1-1{
+    text-align: center;
+    transform: translateY(20px);
+}
+
+.p2{
+    text-align: center;
+    transform: translateY(200px);
+}
+
+.p3{
+    text-align: center;
+    transform: translateY(200px);
+}
+
+.cajita1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajita1 img{
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+}
+
+.cajita2{
+    flex-shrink: 0; 
+    display: flex;
+    align-items: center;
+}
+
+.cajita2-wrapper{
+display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 20px; 
+    padding: 10px;
+    width: 100%; 
+}
+
+.cajita2 img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.p1-2{
+    margin: 0;
+    flex: 1;   
+    text-align: left; 
 }
