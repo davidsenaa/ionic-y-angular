@@ -1,3 +1,4 @@
+/* colores de las toolbar y de los segmentos*/ 
 ion-toolbar{
     --background: linear-gradient(to bottom left, var(--ion-color-primero), var(--ion-color-tercero));
     --color: white;
@@ -8,6 +9,8 @@ ion-segment{
     --background: linear-gradient(to bottom left, var(--ion-color-tercero), var(--ion-color-primero));
 }
 
+
+/* colores de los botones para ingresar a la paginas */
 .boton1{
     --color: white;
 }
@@ -20,28 +23,20 @@ ion-segment{
     --color: white;
 }
 
+/* titulos centrados */
 h2{
     text-align: center;
 }
 
+/* pagina 1 */
 .p1{
-    text-align: center;
+    text-align: justify;
     transform: translateY(20px);
 }
 
 .p1-1{
-    text-align: center;
+    text-align: justify;
     transform: translateY(20px);
-}
-
-.p2{
-    text-align: center;
-    transform: translateY(200px);
-}
-
-.p3{
-    text-align: center;
-    transform: translateY(200px);
 }
 
 .cajita1{
@@ -62,24 +57,40 @@ h2{
     align-items: center;
 }
 
-.cajita2-wrapper{
-display: flex;
-    flex-direction: row; 
-    align-items: center; 
-    justify-content: flex-start; 
-    gap: 20px; 
-    padding: 10px;
-    width: 100%; 
-}
 
 .cajita2 img{
+    margin-top: 30px;
     width: 120px;
     height: 120px;
     object-fit: cover;
 }
 
 .p1-2{
-    margin: 0;
-    flex: 1;   
-    text-align: left; 
+    margin-top: 35PX;
+    margin-left: 15PX;
 }
+
+.p1-3{
+    text-align: justify;
+}
+
+/* pagina 2 */
+
+.caja2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ion-button{
+        margin-top: 300px;
+        --background: var(--ion-color-tercero);
+        --bakground-hover: var(--ion-color-tercero-tint);
+        --color: white;
+        --border-radius: 8px;
+        --padding-start: 24px;
+        --padding-end: 24px;
+        --box-shadow: 0 4px 12 px rgba(255,255,255); 
+    }
+}
+
+/*pagina 3 */

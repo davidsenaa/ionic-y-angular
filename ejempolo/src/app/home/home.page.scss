@@ -1,3 +1,5 @@
 ion-toolbar{
-    background-color: var(ion-color-primero);
+    --background: linear-gradient(to bottom left, var(--ion-color-primero), var(--ion-color-tercero));
+    --color: white;
+    text-align: center;
 }
